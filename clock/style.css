@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #cce2cb;
+  display: grid;
+  place-content: center;
+}
+
+#clock {
+  padding: 40px;
+  background-color: #97c1a9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numTimeLocal {
+  width: 160px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #5fa37a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.colon {
+  font-size: 80px;
+  margin: 0px 10px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.numTime {
+  font-size: 90px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.numDesc {
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+#date {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #5fa37a;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
