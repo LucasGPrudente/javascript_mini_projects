@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffe5f0;
+  display: grid;
+  place-content: center;
+}
+
+#stopwatch {
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#display {
+  height: 340px;
+  width: 340px;
+  background-color: transparent;
+  border: 3px solid #e3b1c8;
+  border-radius: 170px;
+  color: #ffffff;
+  font-size: 45px;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#actions {
+  width: 310px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #d3d3d3;
+  color: #1f1f1f;
+  transition-duration: 0.3s;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnStart:hover{
+  background-color: #5dc460;
+  color: #ffffff;
+}
+
+#btnStop:hover{
+  background-color: #e2504c;
+  color: #ffffff;
+}
+
+#btnReset:hover{
+  background-color: #6a9eda;
+  color: #ffffff;
+}
+
+#iconStart, #iconStop, #iconReset{
+  font-size: 30px;
+}
