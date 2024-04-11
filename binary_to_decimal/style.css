@@ -1,0 +1,147 @@
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* apply font in all elements */
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/* body atributes */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ff6961;
+  display: grid;
+  place-content: center;
+}
+
+/* divs atributes and aligns */
+
+main {
+  padding: 40px 20px 50px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#titleSection {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#converterSection {
+  position: relative;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#infoBinary, #infoDecimal {
+  width: 210px;
+  height: 30px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: absolute;
+  top: 75px;
+}
+
+#infoBinary{
+  left: 25px;
+}
+
+#infoDecimal {
+  right: 25px;
+}
+
+#binarySection, #decimalSection {
+  padding: 0px 20px 0px 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* input */
+
+.input {
+  width: 220px;
+  height: 40px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 2px solid #1f1f1f;
+  transition-duration: 0.2s;
+  font-weight: 600;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid #ff6961;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* text */
+
+.inputName {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.infoTxt {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/* icons */
+
+#swapTitleIcon {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0px 5px;
+}
+
+#swapIcon {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+/* animations */
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fade-out {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
